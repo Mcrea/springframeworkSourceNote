@@ -1,0 +1,8 @@
+FrameworkServlet类直接继承于HttpServletBean类，没有实现的接口。
+它加载了servlet的上下文对象并对其进行管理，为DispatchServlet加载装配bean
+提供了前提。（后者直接继承于前者）
+它重写了父类的initServletBean方法，在其中初始化了上下文对象并调用了自身的
+空实现方法initFrameworkServlet供子类重写加载自己需要的beanProperties。
+最后，它重写了HttpServlet类的doGet等方法，将处理过程交给了processRequest
+方法，在processRequest方法中，将处理request请求的部分封装为一个抽象
+方法让子类（DispatchServlet）实现。

@@ -1,0 +1,2 @@
+DispatchServlet类是springframework的核心类，在这里将会看到spring workflow中各种常见的组件，
+并领略到面向接口编程的魅力。
