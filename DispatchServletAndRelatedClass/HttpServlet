@@ -1,0 +1,1 @@
+HttpServlet类是所有基于javaEE实现web程序开发必须继承的抽象类，是javaEE的核心类，不属于spring框架。
